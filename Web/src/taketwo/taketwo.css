@@ -1,0 +1,83 @@
+.takeTwoSelection{
+    -webkit-box-shadow: 0px 0px 40px 20px rgba(73, 50, 130, 1);
+    -moz-box-shadow:    0px 0px 40px 20px rgba(73, 50, 130, 1);
+    box-shadow:         0px 0px 40px 20px rgba(73, 50, 130, 1);
+}
+
+.takeTwoCard{
+    width: 100%;
+    max-width: 250px;
+    position:relative;
+    overflow: visible;
+}
+
+.takeTwoCardScore{
+    display:block;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    font-size: 20px;
+    color: white;
+    z-index: 5;
+}
+
+.takeTwoCardBack{
+    transform: scale(0.8);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0px;
+    z-index:-1;   
+    overflow: visible; 
+}
+
+.takeTwoFull{
+    width:100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.takeTwoSideLeft{
+    float:left;
+}
+
+.takeTwoSideRight{
+    float:right;
+}
+
+.takeTwoPickOne{
+    transform: rotate(-6deg);
+    /*left:-20px;*/
+    z-index:1;
+    position: relative;
+}
+
+.takeTwoPickTwo{
+    transform: rotate(6deg);
+    left:-20px;
+    top:45px;
+    z-index:0;
+    position: relative;
+}
+
+.takeTwoPickThree{
+    transform: rotate(-6deg);
+    left:20px;
+    top:45px;
+    z-index:0;
+    position: relative;
+}
+
+.takeTwoPickFour{
+    transform: rotate(6deg);
+    left:0px;
+    z-index:1;
+    position: relative;
+}
+
+.list-group-item:first-child{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}

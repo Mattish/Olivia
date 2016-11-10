@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src/**/*",
+        "typings/index.d.ts"
+    ]
+}

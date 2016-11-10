@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="form-group">
+            <form>
+                <input class="form-control" id="cardSearchInput" type="text" placeholder="Card Name"
+                    ng-model="vm.searchInput" ng-change="vm.inputChanged()"
+                    ng-keydown="vm.inputKeyPressed($event)" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;"
+                />
+            </form>
+        </div>
+        <div style="position:absolute;display:block;float:left;top:33px;left:0px;width:100%;padding: 0px 15px 0px 15px;">
+            <div class="list-group">
+                <div class="list-group-item" ng-class="{'active' : $index === vm.selectionIndex}" ng-click="vm.selectCard(card)"
+                    ng-repeat="card in vm.filteredCards | limitTo: 5 track by $index">
+                    {{card.card_name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>

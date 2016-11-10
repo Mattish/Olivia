@@ -1,0 +1,8 @@
+<div class="takeTwoCardScore">
+    <span class="label label-default" ng-hide="vm.card === undefined">{{vm.card.score}}</span>
+    <span class="label label-default" ng-show="vm.card === undefined">?</span>
+</div>
+<img ng-show="vm.card === undefined" class="takeTwoCard" src="./assets/EmptyCard.png">
+<img ng-hide="vm.card === undefined" class="takeTwoCard" style="background: url('./assets/LoadingCard.png');background-size: 100% 100%;"
+    src="{{'https://shadowverse-portal.com/image/card/en/C_' + vm.card.card_id + '.png'}}">
+<div class="takeTwoCardBack" ng-class="{'takeTwoSelection' : vm.canPick}"></div>

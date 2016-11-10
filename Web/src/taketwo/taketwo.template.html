@@ -1,0 +1,50 @@
+<div class="well takeTwoFull">
+    <div class="row">
+        <div class="col-sm-12" style="height:40px;"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 takeTwoSideLeft" ng-mouseover="vm.mouseOverLeft()"
+            ng-mousedown="vm.mouseClick()" ng-mouseleave="vm.mouseLeaveLeft()">
+            <div class="col-sm-6">
+                <div class="takeTwoPickOne">
+                    <take-two-card-big card="vm.addedCards[0]" can-pick="vm.canPickLeft"></take-two-card-big>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="takeTwoPickTwo">
+                    <take-two-card-big card="vm.addedCards[1]" can-pick="vm.canPickLeft"></take-two-card-big>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 takeTwoSideRight" ng-mouseover="vm.mouseOverRight()"
+            ng-mousedown="vm.mouseClick()" ng-mouseleave="vm.mouseLeaveRight()">
+            <div class="col-sm-6">
+                <div class="takeTwoPickThree">
+                    <take-two-card-big card="vm.addedCards[2]" can-pick="vm.canPickRight"></take-two-card-big>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="takeTwoPickFour">
+                    <take-two-card-big card="vm.addedCards[3]" can-pick="vm.canPickRight"></take-two-card-big>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" style="height:20px;z-index:-5;"></div>
+    </div>
+
+</div>
+<div class="container" tabindex="0">
+    <take-two-card-pick-list added-cards="vm.addedCards"></take-two-card-pick-list>
+</div>
+<hr/>
+<h2>
+    T2 scores based on @pekonyan_sv's
+</h2>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <take-two-card-list cards="vm.selectedCards"></take-two-card-list>
+    </div>
+</div>

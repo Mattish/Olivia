@@ -1,0 +1,22 @@
+<div style="width:100%;padding: 0px 15px 0px 15px;">
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Cost</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Count</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="(key, value) in cards | orderBy: 'cost' | groupBy: 'card_name' track by $index">
+                <th scope="row" style="color:aqua">{{value[0].cost}}</th>
+                <td>{{value[0].card_id}}</td>
+                <td>{{value[0].card_name}}</td>
+                <td>{{value.length}}</td>
+                <td>{{value[0].score}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
